@@ -9,7 +9,7 @@ Creating a Tribute Page for the [FreeCodeCamp](https://www.freecodecamp.org/) Re
 
 ## Screenshot
 
-wip
+![Desktop Screenshot](./desktop-screenshot.png)
 
 ## Links
 
