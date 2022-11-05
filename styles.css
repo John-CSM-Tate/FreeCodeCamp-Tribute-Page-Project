@@ -11,55 +11,129 @@
     box-sizing: border-box;
 }
 
+/* globel */
+
+a {
+    color: var(--hover);
+}
+
+a:visited {
+    color: var(--hover);
+}
+
+a:hover {
+    color: var(--hover-shadow);
+}
+
 body {
     background: radial-gradient(circle at bottom, rgb(0, 0, 52) 0, black 100%);
     text-align: center;
     color: var(--text);
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+/* Container */
 
 main {
     background-color: var(--background-main);
-    margin: 2rem 5rem;
+    margin: 2rem;
+    padding: 15px;
+    max-width: 1000px;
+    height: fit-content;
+    border-radius: 5px; 
+    box-shadow: 0 0 1px 1px var(--background-alt);
+    -webkit-box-shadow: 0 0 1px 1px var(--background-alt);
 }
+
+@media screen and (max-width: 450px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+/* Header */
 
 h1 {
     font-size: 3rem;
 }
 
+header p {
+    font-size: 1rem;
+}
 
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Image */
 
 figure {
+    margin: 20px auto;
     max-width: 720px;
     border-radius: 5px;
     background-color: var(--background-alt);
+    padding: 20px;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
-    padding: 30px;
+    margin: 0 auto 15px;
 }
 
-.img-caption {
-    margin: 15px 0 5px;
+#img-caption {
+    margin: 10px;
 }
 
-.tribute-info {
-    padding: 40px;
+@media screen and (max-width: 450px) {
+    figure {
+        padding: 10px;
+        width: 400;
+    }
+}
+
+/* Tribute Info */
+
+.line {
+    width: 50%;
+    margin: 0 auto 20px;
+    border-bottom: 2px solid var(--background-alt);
 }
 
 ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
     text-align: left;
     line-height: 1.2;
 }
 
 li {
-    margin: 16px 0;
+    margin: 10px;
+}
+
+#tribute-info p {
+    font-size: 0.5rem;
+}
+
+@media screen and (max-width: 450px) {
+    ul {
+        max-width: 400px;
+        margin: 0 auto 50px auto;
+    }
+}
+
+#tribute-name {
+    max-width: 750px;
+    font-size: 1rem;
 }
