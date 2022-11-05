@@ -13,7 +13,7 @@ Creating a Tribute Page for the [FreeCodeCamp](https://www.freecodecamp.org/) Re
 
 ## Links
 
-wip
+Live Site URL: [Live Github Page](https://john-csm-tate.github.io/FreeCodeCamp-Tribute-Page-Project/)
 
 ## Authors
 
